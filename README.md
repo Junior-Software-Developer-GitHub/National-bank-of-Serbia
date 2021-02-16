@@ -5,7 +5,7 @@ in our bank, he can see the information about him and the balance on the account
 automatically updated. If the user does not have an account, there is an option for new users, where the user must fill in the fields such as their name,
 surname, National ID number (unique), balance, PIN(unique). Unique means that we can have only one value for the National ID number and PIN.
 
-#⚠️Requirements
+# ⚠️Requirements
 
 .NET Framework 4.7.2 => https://dotnet.microsoft.com/download/dotnet-framework/net472
 ##   Guna extension
