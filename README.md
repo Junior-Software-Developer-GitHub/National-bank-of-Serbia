@@ -8,32 +8,12 @@ surname, National ID number (unique), balance, PIN(unique). Unique means that we
 # Requirements
 
 .NET Framework 4.7.2 => https://dotnet.microsoft.com/download/dotnet-framework/net472
-# Guna extension
+## Guna extension
 ![20210216_224131](https://user-images.githubusercontent.com/68865498/108125065-39b65780-70a8-11eb-86a0-574a4a31a8c6.gif)
 
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+![20210216_224925](https://user-images.githubusercontent.com/68865498/108125800-48e9d500-70a9-11eb-9883-5425c5b8f395.gif)
 
-```bash
-pip install foobar
-```
 
-## Usage
-
-```python
-import foobar
-
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
-```
-
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
