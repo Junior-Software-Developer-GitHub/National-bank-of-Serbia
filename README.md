@@ -7,9 +7,9 @@ surname, National ID number (unique), balance, PIN(unique). Unique means that we
 
 # Requirements
 
-.NET Framework 4 4.7.2 => https://dotnet.microsoft.com/download/dotnet-framework/net472
+.NET Framework 4.7.2 => https://dotnet.microsoft.com/download/dotnet-framework/net472
 # Guna extension
-![20210216_220841](https://user-images.githubusercontent.com/68865498/108123738-9add2b80-70a6-11eb-85b9-d48971c4e7fb.gif)
+![20210216_224131](https://user-images.githubusercontent.com/68865498/108125065-39b65780-70a8-11eb-86a0-574a4a31a8c6.gif)
 
 
 ## Installation
