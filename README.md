@@ -19,4 +19,4 @@ surname, National ID number (unique), balance, PIN(unique). Unique means that we
 
 # ✔️Installation
 
-![20210216_224925](https://user-images.githubusercontent.com/68865498/108125800-48e9d500-70a9-11eb-9883-5425c5b8f395.gif)
+![instagif](https://user-images.githubusercontent.com/68865498/108200293-8ccaf180-711e-11eb-9da2-a51b16ad41cf.gif)
