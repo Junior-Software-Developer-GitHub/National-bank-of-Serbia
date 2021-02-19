@@ -10,7 +10,7 @@ surname, National ID number (unique), balance, PIN(unique). Unique means that we
 .NET Framework 4.7.2 => https://dotnet.microsoft.com/download/dotnet-framework/net472
 ##   Guna2 extension
 
-![20210216_224131](https://user-images.githubusercontent.com/68865498/108125065-39b65780-70a8-11eb-86a0-574a4a31a8c6.gif)
+![guna2gif](https://user-images.githubusercontent.com/68865498/108201203-cb14e080-711f-11eb-8c09-64e721b78aa5.gif)
 
 ## Adding Guna.UI.dll to the Reference
 
@@ -19,4 +19,4 @@ surname, National ID number (unique), balance, PIN(unique). Unique means that we
 
 # ✔️Installation
 
-![20210216_224925](https://user-images.githubusercontent.com/68865498/108125800-48e9d500-70a9-11eb-9883-5425c5b8f395.gif)
+![installationgif](https://user-images.githubusercontent.com/68865498/108201673-71f97c80-7120-11eb-9902-a6b1cea9d558.gif)
