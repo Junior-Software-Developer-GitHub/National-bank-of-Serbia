@@ -11,7 +11,7 @@ namespace National_Bank_of_Serbia
 
         private static string pass, namef, namel, balance;
         private static int i = 0;
-        private readonly SqlConnection con = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\C#\National-bank-of-Serbia\Bank.mdf;Integrated Security=True");
+        private readonly SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-CDQI3D6\SQLEXPRESS;Initial Catalog=NationalBank;Integrated Security=True;Pooling=False");
 
         /* Constructor */
         public LoginForm()
