@@ -90,7 +90,15 @@ namespace National_Bank_of_Serbia
                 timer1.Stop();
             }
         }
-       
+
+        /* CheckBox CheckedChanged method */
+
+        private void CheckBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            _ = checkBox1.Checked ? (Verify_btn.Visible = true, balance_txt.Enabled = false) :
+                (Verify_btn.Visible = false, balance_txt.Enabled = true);
+        }
+
 
         /* Auxiliary methods */
         private void Connection()
@@ -254,10 +262,6 @@ namespace National_Bank_of_Serbia
             fm1.Show();
         }
 
-        private void CheckBox1_CheckedChanged(object sender, EventArgs e)
-        {
-            _ = checkBox1.Checked ? (Verify_btn.Visible = true, balance_txt.Enabled = false) :
-                (Verify_btn.Visible = false, balance_txt.Enabled = true);   
-        }
+
     }
 }
