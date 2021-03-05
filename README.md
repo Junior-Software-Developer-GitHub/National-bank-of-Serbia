@@ -20,3 +20,7 @@ surname, National ID number (unique), balance, PIN(unique). Unique means that we
 # ✔️Installation
 
 ![installationgif](https://user-images.githubusercontent.com/68865498/108201673-71f97c80-7120-11eb-9902-a6b1cea9d558.gif)
+
+# 🤖AI Verification
+
+![ccc](https://user-images.githubusercontent.com/68865498/110180699-8f119900-7e0a-11eb-9ece-fd7938509f6d.gif)
