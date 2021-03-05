@@ -25,6 +25,12 @@ namespace National_Bank_of_Serbia
 
         private void Back1_btn_Click(object sender, EventArgs e) => Back();
 
+        private void Verify_btn_Click(object sender, EventArgs e)
+        {
+            VerifyForm vf = new VerifyForm();
+            vf.Show();
+        }
+
         /* KeyPress methods */
         private void FirstName_txt_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -246,6 +252,12 @@ namespace National_Bank_of_Serbia
             this.Hide();
             UserForm fm1 = new UserForm();
             fm1.Show();
+        }
+
+        private void CheckBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            _ = checkBox1.Checked ? (Verify_btn.Visible = true, balance_txt.Enabled = false) :
+                (Verify_btn.Visible = false, balance_txt.Enabled = true);   
         }
     }
 }

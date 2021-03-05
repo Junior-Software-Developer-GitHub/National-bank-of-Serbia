@@ -40,11 +40,13 @@
             this.nationalID_txt = new System.Windows.Forms.TextBox();
             this.balance_txt = new System.Windows.Forms.TextBox();
             this.pin_txt = new System.Windows.Forms.TextBox();
-            this.Back1_btn = new Guna.UI2.WinForms.Guna2CircleButton();
             this.Back_btn = new Guna.UI2.WinForms.Guna2Button();
             this.Register_btn = new Guna.UI2.WinForms.Guna2Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.Verify_btn = new Guna.UI2.WinForms.Guna2Button();
+            this.Back1_btn = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
@@ -55,11 +57,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F);
             this.label1.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.label1.Location = new System.Drawing.Point(89, 63);
+            this.label1.Location = new System.Drawing.Point(8, 58);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 21);
+            this.label1.Size = new System.Drawing.Size(284, 21);
             this.label1.TabIndex = 0;
-            this.label1.Text = "First name:";
+            this.label1.Text = "Firstname of the Payment services user:";
             // 
             // label2
             // 
@@ -69,11 +71,11 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F);
             this.label2.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.label2.Location = new System.Drawing.Point(89, 101);
+            this.label2.Location = new System.Drawing.Point(8, 96);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 21);
+            this.label2.Size = new System.Drawing.Size(282, 21);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Last name:";
+            this.label2.Text = "Lastname of the Payment services user:";
             // 
             // label3
             // 
@@ -83,11 +85,11 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F);
             this.label3.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.label3.Location = new System.Drawing.Point(89, 144);
+            this.label3.Location = new System.Drawing.Point(8, 139);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 21);
+            this.label3.Size = new System.Drawing.Size(239, 21);
             this.label3.TabIndex = 2;
-            this.label3.Text = "National ID:";
+            this.label3.Text = "Unique Citizens Identity Number:";
             // 
             // label4
             // 
@@ -97,7 +99,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F);
             this.label4.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.label4.Location = new System.Drawing.Point(89, 190);
+            this.label4.Location = new System.Drawing.Point(11, 214);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(66, 21);
             this.label4.TabIndex = 3;
@@ -111,65 +113,131 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F);
             this.label5.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.label5.Location = new System.Drawing.Point(89, 232);
+            this.label5.Location = new System.Drawing.Point(8, 175);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(38, 21);
+            this.label5.Size = new System.Drawing.Size(229, 21);
             this.label5.TabIndex = 4;
-            this.label5.Text = "PIN:";
+            this.label5.Text = "Personal Identification Number:";
             // 
             // firstName_txt
             // 
-            this.firstName_txt.Location = new System.Drawing.Point(198, 61);
+            this.firstName_txt.Location = new System.Drawing.Point(289, 61);
             this.firstName_txt.MaxLength = 20;
             this.firstName_txt.Multiline = true;
             this.firstName_txt.Name = "firstName_txt";
-            this.firstName_txt.Size = new System.Drawing.Size(100, 23);
+            this.firstName_txt.Size = new System.Drawing.Size(140, 23);
             this.firstName_txt.TabIndex = 5;
             this.firstName_txt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FirstName_txt_KeyPress);
             // 
             // lastName_txt
             // 
-            this.lastName_txt.Location = new System.Drawing.Point(198, 99);
+            this.lastName_txt.Location = new System.Drawing.Point(289, 99);
             this.lastName_txt.MaxLength = 20;
             this.lastName_txt.Multiline = true;
             this.lastName_txt.Name = "lastName_txt";
-            this.lastName_txt.Size = new System.Drawing.Size(100, 23);
+            this.lastName_txt.Size = new System.Drawing.Size(140, 23);
             this.lastName_txt.TabIndex = 7;
             this.lastName_txt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.LastName_txt_KeyPress);
             // 
             // nationalID_txt
             // 
-            this.nationalID_txt.Location = new System.Drawing.Point(198, 142);
+            this.nationalID_txt.Location = new System.Drawing.Point(289, 137);
             this.nationalID_txt.MaxLength = 13;
             this.nationalID_txt.Multiline = true;
             this.nationalID_txt.Name = "nationalID_txt";
-            this.nationalID_txt.Size = new System.Drawing.Size(100, 23);
+            this.nationalID_txt.Size = new System.Drawing.Size(140, 23);
             this.nationalID_txt.TabIndex = 8;
             this.toolTip1.SetToolTip(this.nationalID_txt, "National ID must contain 13 numbers");
             this.nationalID_txt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NationalID_txt_KeyPress);
             // 
             // balance_txt
             // 
-            this.balance_txt.Location = new System.Drawing.Point(198, 188);
+            this.balance_txt.Location = new System.Drawing.Point(289, 213);
             this.balance_txt.MaxLength = 8;
             this.balance_txt.Multiline = true;
             this.balance_txt.Name = "balance_txt";
-            this.balance_txt.Size = new System.Drawing.Size(100, 23);
+            this.balance_txt.Size = new System.Drawing.Size(140, 23);
             this.balance_txt.TabIndex = 9;
             this.toolTip1.SetToolTip(this.balance_txt, "Maximum is 99999999");
             this.balance_txt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Balance_txt_KeyPress);
             // 
             // pin_txt
             // 
-            this.pin_txt.Location = new System.Drawing.Point(198, 230);
+            this.pin_txt.Location = new System.Drawing.Point(289, 175);
             this.pin_txt.MaxLength = 4;
             this.pin_txt.Multiline = true;
             this.pin_txt.Name = "pin_txt";
             this.pin_txt.PasswordChar = '*';
-            this.pin_txt.Size = new System.Drawing.Size(100, 23);
+            this.pin_txt.Size = new System.Drawing.Size(140, 23);
             this.pin_txt.TabIndex = 10;
             this.toolTip1.SetToolTip(this.pin_txt, "PIN must contain 4 numbers!");
             this.pin_txt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Pin_txt_KeyPress);
+            // 
+            // Back_btn
+            // 
+            this.Back_btn.Animated = true;
+            this.Back_btn.AutoRoundedCorners = true;
+            this.Back_btn.BorderRadius = 19;
+            this.Back_btn.BorderThickness = 2;
+            this.Back_btn.CheckedState.Parent = this.Back_btn;
+            this.Back_btn.CustomImages.Parent = this.Back_btn;
+            this.Back_btn.FillColor = System.Drawing.Color.LightSlateGray;
+            this.Back_btn.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F);
+            this.Back_btn.ForeColor = System.Drawing.Color.Black;
+            this.Back_btn.HoverState.Parent = this.Back_btn;
+            this.Back_btn.Location = new System.Drawing.Point(173, 309);
+            this.Back_btn.Name = "Back_btn";
+            this.Back_btn.ShadowDecoration.Parent = this.Back_btn;
+            this.Back_btn.Size = new System.Drawing.Size(100, 40);
+            this.Back_btn.TabIndex = 12;
+            this.Back_btn.Text = "BACK";
+            this.Back_btn.Click += new System.EventHandler(this.Back_btn_Click);
+            // 
+            // Register_btn
+            // 
+            this.Register_btn.Animated = true;
+            this.Register_btn.AutoRoundedCorners = true;
+            this.Register_btn.BorderRadius = 19;
+            this.Register_btn.BorderThickness = 2;
+            this.Register_btn.CheckedState.Parent = this.Register_btn;
+            this.Register_btn.CustomImages.Parent = this.Register_btn;
+            this.Register_btn.FillColor = System.Drawing.Color.LightSlateGray;
+            this.Register_btn.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F);
+            this.Register_btn.ForeColor = System.Drawing.Color.Black;
+            this.Register_btn.HoverState.Parent = this.Register_btn;
+            this.Register_btn.Location = new System.Drawing.Point(150, 263);
+            this.Register_btn.Name = "Register_btn";
+            this.Register_btn.ShadowDecoration.Parent = this.Register_btn;
+            this.Register_btn.Size = new System.Drawing.Size(140, 40);
+            this.Register_btn.TabIndex = 12;
+            this.Register_btn.Text = "REGISTER";
+            this.Register_btn.Click += new System.EventHandler(this.Register_btn_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 25;
+            this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
+            // 
+            // Verify_btn
+            // 
+            this.Verify_btn.Animated = true;
+            this.Verify_btn.AutoRoundedCorners = true;
+            this.Verify_btn.BorderRadius = 16;
+            this.Verify_btn.BorderThickness = 2;
+            this.Verify_btn.CheckedState.Parent = this.Verify_btn;
+            this.Verify_btn.CustomImages.Parent = this.Verify_btn;
+            this.Verify_btn.FillColor = System.Drawing.Color.LightSlateGray;
+            this.Verify_btn.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F);
+            this.Verify_btn.ForeColor = System.Drawing.Color.Black;
+            this.Verify_btn.HoverState.Parent = this.Verify_btn;
+            this.Verify_btn.Location = new System.Drawing.Point(107, 213);
+            this.Verify_btn.Name = "Verify_btn";
+            this.Verify_btn.ShadowDecoration.Parent = this.Verify_btn;
+            this.Verify_btn.Size = new System.Drawing.Size(85, 34);
+            this.Verify_btn.TabIndex = 14;
+            this.Verify_btn.Text = "Verify";
+            this.Verify_btn.Visible = false;
+            this.Verify_btn.Click += new System.EventHandler(this.Verify_btn_Click);
             // 
             // Back1_btn
             // 
@@ -191,50 +259,16 @@
             this.Back1_btn.TabIndex = 12;
             this.Back1_btn.Click += new System.EventHandler(this.Back1_btn_Click);
             // 
-            // Back_btn
+            // checkBox1
             // 
-            this.Back_btn.Animated = true;
-            this.Back_btn.AutoRoundedCorners = true;
-            this.Back_btn.BorderRadius = 19;
-            this.Back_btn.BorderThickness = 2;
-            this.Back_btn.CheckedState.Parent = this.Back_btn;
-            this.Back_btn.CustomImages.Parent = this.Back_btn;
-            this.Back_btn.FillColor = System.Drawing.Color.LightSlateGray;
-            this.Back_btn.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F);
-            this.Back_btn.ForeColor = System.Drawing.Color.Black;
-            this.Back_btn.HoverState.Parent = this.Back_btn;
-            this.Back_btn.Location = new System.Drawing.Point(149, 368);
-            this.Back_btn.Name = "Back_btn";
-            this.Back_btn.ShadowDecoration.Parent = this.Back_btn;
-            this.Back_btn.Size = new System.Drawing.Size(100, 40);
-            this.Back_btn.TabIndex = 12;
-            this.Back_btn.Text = "BACK";
-            this.Back_btn.Click += new System.EventHandler(this.Back_btn_Click);
-            // 
-            // Register_btn
-            // 
-            this.Register_btn.Animated = true;
-            this.Register_btn.AutoRoundedCorners = true;
-            this.Register_btn.BorderRadius = 19;
-            this.Register_btn.BorderThickness = 2;
-            this.Register_btn.CheckedState.Parent = this.Register_btn;
-            this.Register_btn.CustomImages.Parent = this.Register_btn;
-            this.Register_btn.FillColor = System.Drawing.Color.LightSlateGray;
-            this.Register_btn.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F);
-            this.Register_btn.ForeColor = System.Drawing.Color.Black;
-            this.Register_btn.HoverState.Parent = this.Register_btn;
-            this.Register_btn.Location = new System.Drawing.Point(129, 279);
-            this.Register_btn.Name = "Register_btn";
-            this.Register_btn.ShadowDecoration.Parent = this.Register_btn;
-            this.Register_btn.Size = new System.Drawing.Size(140, 40);
-            this.Register_btn.TabIndex = 12;
-            this.Register_btn.Text = "REGISTER";
-            this.Register_btn.Click += new System.EventHandler(this.Register_btn_Click);
-            // 
-            // timer1
-            // 
-            this.timer1.Interval = 25;
-            this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(15, 249);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(91, 17);
+            this.checkBox1.TabIndex = 15;
+            this.checkBox1.Text = "AI Verification";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.CheckBox1_CheckedChanged);
             // 
             // RegistrationForm
             // 
@@ -242,7 +276,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.LightSlateGray;
-            this.ClientSize = new System.Drawing.Size(394, 416);
+            this.ClientSize = new System.Drawing.Size(452, 362);
+            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.Verify_btn);
             this.Controls.Add(this.Register_btn);
             this.Controls.Add(this.Back_btn);
             this.Controls.Add(this.Back1_btn);
@@ -279,12 +315,14 @@
         private System.Windows.Forms.TextBox firstName_txt;
         private System.Windows.Forms.TextBox lastName_txt;
         private System.Windows.Forms.TextBox nationalID_txt;
-        private System.Windows.Forms.TextBox balance_txt;
         private System.Windows.Forms.TextBox pin_txt;
         private Guna.UI2.WinForms.Guna2CircleButton Back1_btn;
         private Guna.UI2.WinForms.Guna2Button Back_btn;
         private Guna.UI2.WinForms.Guna2Button Register_btn;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ToolTip toolTip1;
+        private Guna.UI2.WinForms.Guna2Button Verify_btn;
+        public System.Windows.Forms.TextBox balance_txt;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
